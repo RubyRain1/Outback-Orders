@@ -67,7 +67,7 @@ namespace Outback_Orders
                 MessageBox.Show("enter valid Zip");
             }
                 
-            if (int.TryParse(check2, out num)) // logic again doesnt work for the second one I do not know why.
+            if (int.TryParse(check2, out num2)) // logic again doesnt work for the second one I do not know why.
             {
                     //phone storage
                     outputfile = File.AppendText("Delivery.txt");

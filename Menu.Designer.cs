@@ -400,6 +400,7 @@
             this.labelbool.Size = new System.Drawing.Size(35, 13);
             this.labelbool.TabIndex = 11;
             this.labelbool.Text = "label1";
+            this.labelbool.Visible = false;
             // 
             // FormMenu
             // 

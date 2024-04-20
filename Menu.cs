@@ -17,6 +17,7 @@ namespace Outback_Orders
         double total2 = 0;
         int count = 1;
         double[] totalArray = new double[19];
+        double tax = 0;
         public FormMenu()
         {
             InitializeComponent();
@@ -215,6 +216,12 @@ namespace Outback_Orders
                 MessageBox.Show("you have ordered twice the old total will be displayed thank you for ordering with outback orders!");
             }
         }
+
+        public void TaxCalc()
+        {
+            tax = Math.Round(total2 * 0.06, 2);
+        }
+
         private void FormMenu_Load(object sender, EventArgs e)
         {
 
@@ -244,10 +251,11 @@ namespace Outback_Orders
         {
             
             TotalCalc();
+            TaxCalc();
 
             StreamWriter outputfile;
             outputfile = File.CreateText("Total.txt");
-            outputfile.WriteLine(total2);
+            outputfile.WriteLine(total2 + tax);
             outputfile.Close();
 
           if(labelbool.Text == "true")
