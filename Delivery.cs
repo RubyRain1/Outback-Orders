@@ -53,6 +53,18 @@ namespace Outback_Orders
             outputfile.WriteLine(textBoxCity.Text);
             outputfile.Close();
 
+            if (int.TryParse(check2, out num2)) // logic again doesnt work for the second one I do not know why.
+            {
+                //phone storage
+                outputfile = File.AppendText("Delivery.txt");
+                outputfile.WriteLine(textBoxPhone.Text);
+                outputfile.Close();
+                count++;
+            }
+            else
+            {
+                MessageBox.Show("enter a valid phone number");
+            }
 
             if (int.TryParse(check, out num) && (textBoxZip.Text.Length == 5)) 
             {
@@ -66,20 +78,7 @@ namespace Outback_Orders
             {
                 MessageBox.Show("enter valid Zip");
             }
-                
-            if (int.TryParse(check2, out num2)) // logic again doesnt work for the second one I do not know why.
-            {
-                    //phone storage
-                    outputfile = File.AppendText("Delivery.txt");
-                    outputfile.WriteLine(textBoxPhone.Text);
-                    outputfile.Close();
-                    count++;
-            }
-            else
-            {
-                MessageBox.Show("enter a valid phone number");
-            }
-  
+   
             //email storage
             outputfile = File.AppendText("Delivery.txt");
             outputfile.WriteLine(textBoxEmail.Text);

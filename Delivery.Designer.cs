@@ -90,7 +90,7 @@
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.Location = new System.Drawing.Point(322, 73);
+            this.textBoxPhone.Location = new System.Drawing.Point(357, 73);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(100, 20);
             this.textBoxPhone.TabIndex = 5;
@@ -98,16 +98,16 @@
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Location = new System.Drawing.Point(268, 76);
+            this.labelPhone.Location = new System.Drawing.Point(231, 76);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(48, 13);
+            this.labelPhone.Size = new System.Drawing.Size(120, 13);
             this.labelPhone.TabIndex = 6;
-            this.labelPhone.Text = "Phone#:";
+            this.labelPhone.Text = "Phone# (no area code):";
             // 
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(268, 112);
+            this.labelEmail.Location = new System.Drawing.Point(312, 112);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(39, 13);
             this.labelEmail.TabIndex = 7;
@@ -115,7 +115,7 @@
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(322, 108);
+            this.textBoxEmail.Location = new System.Drawing.Point(357, 109);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
             this.textBoxEmail.TabIndex = 8;
