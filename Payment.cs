@@ -36,16 +36,19 @@ namespace Outback_Orders
             outputfile.Close();
 
 
+
             // restriction logic 
+           
             string check;
             string check2;
             int count = 0;
-            int num;
+            ulong num;
             check = textBoxCardNum.Text;
             check2 = textBoxCVC.Text;
+            
           
             
-            if ((int.TryParse(check, out num))) // the length logic didnt work here? I dont know how to limit 
+            if ((ulong.TryParse(check, out num) && textBoxCardNum.Text.Length == 16)) // the length logic didnt work here? I dont know how to limit 
             {
                 //card number storage
                 outputfile = File.AppendText("Payment.txt");
@@ -63,7 +66,7 @@ namespace Outback_Orders
             outputfile.WriteLine(textBoxExpDate.Text);
             outputfile.Close();
 
-            if (int.TryParse(check2, out  num) && (textBoxCVC.Text.Length == 3))
+            if (ulong.TryParse(check2, out  num) && (textBoxCVC.Text.Length == 3))
             {
                 //CVC storage
                 outputfile = File.AppendText("Payment.txt");

@@ -38,7 +38,7 @@ namespace Outback_Orders
                 labelName.Visible = true;
                 labelAddress.Visible = true;
                 labelName.Text = (delivery[0]);
-                labelAddress.Text = delivery[1] + " " + delivery[2] + " " + delivery[3];
+                labelAddress.Text = delivery[1] + ", " + delivery[2] + "\n" + "\n" + delivery[3];
             }
             else
             {

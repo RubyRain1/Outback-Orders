@@ -28,8 +28,8 @@ namespace Outback_Orders
             string check;
             string check2;
             int count = 0;
-            int num;
-            int num2;
+            ulong num;
+           
             check = textBoxZip.Text;
             check2 = textBoxPhone.Text;
 
@@ -53,7 +53,7 @@ namespace Outback_Orders
             outputfile.WriteLine(textBoxCity.Text);
             outputfile.Close();
 
-            if (int.TryParse(check2, out num2)) // logic again doesnt work for the second one I do not know why.
+            if (ulong.TryParse(check2, out num)) // logic again doesnt work for the second one I do not know why.
             {
                 //phone storage
                 outputfile = File.AppendText("Delivery.txt");
@@ -66,7 +66,7 @@ namespace Outback_Orders
                 MessageBox.Show("enter a valid phone number");
             }
 
-            if (int.TryParse(check, out num) && (textBoxZip.Text.Length == 5)) 
+            if (ulong.TryParse(check, out num) && (textBoxZip.Text.Length == 5)) 
             {
                 //ZipCode storage
                 outputfile = File.AppendText("Delivery.txt");

@@ -32,12 +32,12 @@
             this.buttonBack2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNCard = new System.Windows.Forms.TextBox();
-            this.textBoxCardNum = new System.Windows.Forms.TextBox();
             this.labelCardNum = new System.Windows.Forms.Label();
             this.labelExpDate = new System.Windows.Forms.Label();
             this.labelCVC = new System.Windows.Forms.Label();
             this.textBoxExpDate = new System.Windows.Forms.TextBox();
             this.textBoxCVC = new System.Windows.Forms.TextBox();
+            this.textBoxCardNum = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonPay
@@ -75,13 +75,6 @@
             this.textBoxNCard.Name = "textBoxNCard";
             this.textBoxNCard.Size = new System.Drawing.Size(281, 20);
             this.textBoxNCard.TabIndex = 3;
-            // 
-            // textBoxCardNum
-            // 
-            this.textBoxCardNum.Location = new System.Drawing.Point(35, 154);
-            this.textBoxCardNum.Name = "textBoxCardNum";
-            this.textBoxCardNum.Size = new System.Drawing.Size(281, 20);
-            this.textBoxCardNum.TabIndex = 4;
             // 
             // labelCardNum
             // 
@@ -124,6 +117,13 @@
             this.textBoxCVC.Size = new System.Drawing.Size(65, 20);
             this.textBoxCVC.TabIndex = 9;
             // 
+            // textBoxCardNum
+            // 
+            this.textBoxCardNum.Location = new System.Drawing.Point(35, 154);
+            this.textBoxCardNum.Name = "textBoxCardNum";
+            this.textBoxCardNum.Size = new System.Drawing.Size(281, 20);
+            this.textBoxCardNum.TabIndex = 4;
+            // 
             // Formpayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,11 +153,11 @@
         private System.Windows.Forms.Button buttonBack2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxNCard;
-        private System.Windows.Forms.TextBox textBoxCardNum;
         private System.Windows.Forms.Label labelCardNum;
         private System.Windows.Forms.Label labelExpDate;
         private System.Windows.Forms.Label labelCVC;
         private System.Windows.Forms.TextBox textBoxExpDate;
         private System.Windows.Forms.TextBox textBoxCVC;
+        private System.Windows.Forms.TextBox textBoxCardNum;
     }
 }
